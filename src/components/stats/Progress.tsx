@@ -10,7 +10,7 @@ type Props = {
 export const Progress = ({ index, size, label, currentDayStatRow }: Props) => {
   const currentRowClass = classNames(
     'text-xs font-medium text-blue-100 text-center p-0.5',
-    { 'bg-blue-600': currentDayStatRow, 'bg-gray-600': !currentDayStatRow }
+    { 'bg-marvelBlue-light dark:bg-marvelBlue-dark': currentDayStatRow, 'bg-gray-600': !currentDayStatRow }
   )
   return (
     <div className="flex justify-left m-1">

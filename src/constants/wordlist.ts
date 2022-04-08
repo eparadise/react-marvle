@@ -177,5 +177,7 @@ export const WORDS = [
   'phase',
   'billy',
   'tommy',
-  'civil'
+  'civil',
+  'yondu',
+  'peggy'
 ]

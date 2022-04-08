@@ -13040,4 +13040,6 @@ export const VALID_GUESSES = [
   'nurls',
   'gules',
   'huhus',
+  'yondu',
+  'peggy'
   ]

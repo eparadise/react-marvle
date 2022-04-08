@@ -60,10 +60,10 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
+        This is an open source Marvel-themed version of the word guessing game we all know and
         love -{' '}
         <a
-          href="https://github.com/cwackerfuss/react-wordle"
+          href="https://github.com/eparadise/react-marvle"
           className="underline font-bold"
         >
           check out the code here
