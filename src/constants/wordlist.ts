@@ -179,5 +179,7 @@ export const WORDS = [
   'tommy',
   'civil',
   'yondu',
-  'peggy'
+  'peggy',
+  'mbaku',
+  'wanda'
 ]
