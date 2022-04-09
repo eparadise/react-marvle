@@ -94,7 +94,6 @@ export const WORDS = [
   'clint',
   'tigra',
   'hayes',
-  'daily',
   'vance',
   'white',
   'talon',
@@ -181,5 +180,6 @@ export const WORDS = [
   'yondu',
   'peggy',
   'mbaku',
-  'wanda'
+  'wanda',
+  'darcy'
 ]
