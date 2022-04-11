@@ -181,5 +181,8 @@ export const WORDS = [
   'peggy',
   'mbaku',
   'wanda',
-  'darcy'
+  'darcy',
+  'goose',
+  'shuri',
+  'okoye'
 ]

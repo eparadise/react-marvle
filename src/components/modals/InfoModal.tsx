@@ -1,5 +1,6 @@
 import { Cell } from '../grid/Cell'
 import { BaseModal } from './BaseModal'
+import { yesterday } from '../../lib/words'
 
 type Props = {
   isOpen: boolean
@@ -13,9 +14,6 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         Guess the word in 6 tries. After each guess, the color of the tiles will
         change to show how close your guess was to the word.
       </p>
-      <br/>
-      <p className="text-sm text-gray-500 dark:text-gray-300">Valid guesses include first or last names of Marvel characters as well as words related to the MCU.</p>
-
       <div className="flex justify-center mb-1 mt-4">
         <Cell
           isRevealing={true}
@@ -58,6 +56,11 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The letter R is not in the word in any spot.
       </p>
+      <br/>
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+        Valid guesses include first or last names of Marvel characters 
+        as well as words related to the MCU. Yesterday's word was "<span className="text-marvelRed-light font-bold">{yesterday}</span>".
+        </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
         This is an open source Marvel-themed version of the word guessing game we all know and

@@ -3,7 +3,7 @@ import { StatBar } from '../stats/StatBar'
 import { Histogram } from '../stats/Histogram'
 import { GameStats } from '../../lib/localStorage'
 import { shareStatus } from '../../lib/share'
-import { tomorrow } from '../../lib/words'
+import { tomorrow, solution } from '../../lib/words'
 import { BaseModal } from './BaseModal'
 import {
   STATISTICS_TITLE,
@@ -65,6 +65,13 @@ export const StatsModal = ({
         numberOfGuessesMade={numberOfGuessesMade}
       />
       {(isGameLost || isGameWon) && (
+        <>
+        <div className="text-gray-600 dark:text-white">
+          Today's word was <span className="font-semibold">{solution}</span>.
+          <br/>
+          Not sure who or what that is? Check out the
+          <a className="underline" href="https://www.marvel.com/characters#filter_grid-7" target="_blank" rel="noreferrer"> Marvel Character list</a> or <a className="underline" href="https://marvelcinematicuniverse.fandom.com/wiki/Glossary" target="_blank" rel="noreferrer">MCU Glossary</a>.
+        </div>
         <div className="mt-5 sm:mt-6 columns-2 dark:text-white">
           <div>
             <h5>{NEW_WORD_TEXT}</h5>
@@ -91,6 +98,7 @@ export const StatsModal = ({
             {SHARE_TEXT}
           </button>
         </div>
+        </>
       )}
     </BaseModal>
   )
