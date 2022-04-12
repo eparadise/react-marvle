@@ -56,15 +56,16 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The letter R is not in the word in any spot.
       </p>
-      <br/>
+      <br />
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Valid guesses include first or last names of Marvel characters 
-        as well as words related to the MCU. Yesterday's word was "<span className="text-marvelRed-light font-bold">{yesterday}</span>".
-        </p>
+        Valid guesses include first or last names of Marvel characters as well
+        as words related to the MCU. Yesterday's word was "
+        <span className="text-marvelRed-light font-bold">{yesterday}</span>".
+      </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is an open source Marvel-themed version of the word guessing game we all know and
-        love -{' '}
+        This is an open source Marvel-themed version of the word guessing game
+        we all know and love -{' '}
         <a
           href="https://github.com/eparadise/react-marvle"
           className="underline font-bold"

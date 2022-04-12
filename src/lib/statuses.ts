@@ -7,7 +7,7 @@ export const getStatuses = (
 ): { [key: string]: CharStatus } => {
   const charObj: { [key: string]: CharStatus } = {}
   const splitSolution = unicodeSplit(solution)
-  
+
   guesses.forEach((word) => {
     unicodeSplit(word).forEach((letter, i) => {
       if (!splitSolution.includes(letter)) {

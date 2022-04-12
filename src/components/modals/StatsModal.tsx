@@ -66,38 +66,57 @@ export const StatsModal = ({
       />
       {(isGameLost || isGameWon) && (
         <>
-        <div className="text-gray-600 dark:text-white">
-          Today's word was <span className="font-semibold">{solution}</span>.
-          <br/>
-          Not sure who or what that is? Check out the
-          <a className="underline" href="https://www.marvel.com/characters#filter_grid-7" target="_blank" rel="noreferrer"> Marvel Character list</a> or <a className="underline" href="https://marvelcinematicuniverse.fandom.com/wiki/Glossary" target="_blank" rel="noreferrer">MCU Glossary</a>.
-        </div>
-        <div className="mt-5 sm:mt-6 columns-2 dark:text-white">
-          <div>
-            <h5>{NEW_WORD_TEXT}</h5>
-            <Countdown
-              className="text-lg font-medium text-gray-900 dark:text-gray-100"
-              date={tomorrow}
-              daysInHours={true}
-            />
+          <div className="text-gray-600 dark:text-white">
+            Today's word was{' '}
+            <span className="font-bold text-marvelRed-light">{solution}</span>.
+            <br />
+            Not sure who or what that is? Check out the
+            <a
+              className="underline"
+              href="https://www.marvel.com/characters#filter_grid-7"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {' '}
+              Marvel Character list
+            </a>{' '}
+            or{' '}
+            <a
+              className="underline"
+              href="https://marvelcinematicuniverse.fandom.com/wiki/Glossary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              MCU Glossary
+            </a>
+            .
           </div>
-          <button
-            type="button"
-            className="mt-2 w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-marvelBlue-light dark:bg-marvelBlue-dark text-base font-medium text-white hover:bg-marvelBlue-medium hover:dark:bg-marvelBlue-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
-            onClick={() => {
-              shareStatus(
-                guesses,
-                isGameLost,
-                isHardMode,
-                isDarkMode,
-                isHighContrastMode,
-                handleShareToClipboard
-              )
-            }}
-          >
-            {SHARE_TEXT}
-          </button>
-        </div>
+          <div className="mt-5 sm:mt-6 columns-2 dark:text-white">
+            <div>
+              <h5>{NEW_WORD_TEXT}</h5>
+              <Countdown
+                className="text-lg font-medium text-gray-900 dark:text-gray-100"
+                date={tomorrow}
+                daysInHours={true}
+              />
+            </div>
+            <button
+              type="button"
+              className="mt-2 w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-marvelBlue-light dark:bg-marvelBlue-dark text-base font-medium text-white hover:bg-marvelBlue-medium hover:dark:bg-marvelBlue-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
+              onClick={() => {
+                shareStatus(
+                  guesses,
+                  isGameLost,
+                  isHardMode,
+                  isDarkMode,
+                  isHighContrastMode,
+                  handleShareToClipboard
+                )
+              }}
+            >
+              {SHARE_TEXT}
+            </button>
+          </div>
         </>
       )}
     </BaseModal>

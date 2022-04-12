@@ -13044,5 +13044,9 @@ export const VALID_GUESSES = [
   'mbaku',
   'wanda',
   'shuri',
-  'okoye'
-  ]
+  'okoye',
+  'druig',
+  'ebony',
+  'kingo',
+  'klaue',
+]
